@@ -142,12 +142,12 @@ body {
 
 @media (max-width: 1441px) {
     .quote-name {
-        bottom: 19% !important;
+        bottom: -3.55rem !important;
     }
 }
 @media (max-width: 1024px) {
     .quote-name {
-        bottom: 12% !important;
+        bottom: -3.55rem !important;
     }
 }
 @media (max-width: 840px) {
@@ -155,10 +155,7 @@ body {
         width: 250px !important;
     }
 }
-@media (max-width: 768px) {
-    .quote-name {
-        bottom: -0.56rem !important;
-    }
+@media (max-width: 769px) {
     .dots-image {
         /* right: -10% !important;
         bottom: 55% !important; */

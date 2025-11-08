@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,7 @@
 </head>
 
 <body style="max-width: 100%;">
-    <header class="d-grid" style="height: max-content;">
+    <header class="d-grid" id="header" style="height: max-content;">
         <div class="position-fixed col" style="left: 30px; top: 0; z-index: 888;">
             <div class="rope position-absolute top-0 start-0"></div>
             <div class="position-absolute d-flex flex-column">
@@ -36,7 +35,7 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid position-fixed mb-5 row col-12" style=" z-index: 999 !important;">
-            <div class="container">
+            <div style="backdrop-filter: blur(5px);" class="container">
                 <a class="navbar-brand fw-bold text-light" href="#"><img src="./Images/logo.png" alt=""> Men3m</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -45,20 +44,23 @@
                         <i class="fa-solid fa-bars"></i>
                     </span>
                 </button>
-                <div class="collapse navbar-collapse" style="backdrop-filter: blur(5px);" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><span
+                            <a class="nav-link active" aria-current="page" href="#header"><span
                                     style="color: var(--primary-color);">#</span>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span style="color: var(--primary-color);">#</span>work</a>
+                            <a class="nav-link" href="#about-me"><span style="color: var(--primary-color);">#</span>about-me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span style="color: var(--primary-color);">#</span>about-me</a>
+                            <a class="nav-link" href="#skills"><span style="color: var(--primary-color);">#</span>skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span style="color: var(--primary-color);">#</span>contacts</a>
+                            <a class="nav-link" href="#projects"><span style="color: var(--primary-color);">#</span>projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><span style="color: var(--primary-color);">#</span>contacts</a>
                         </li>
                         <li class="nav-item dropdown align-self-center">
                             <select class="text-light border-0" style="background-color:  var(--background-color);">
@@ -73,7 +75,7 @@
         <div style="height: 60px;"></div>
         <section class="mt-5 container-fluid header-section">
             <div class="container gx-0 ms-auto row offset-2">
-                <section class="col-md-5 col-12">
+                <section class="col-md-6 col-12">
                     <h2 class="text-light mb-5">Men3m is a <span style="color: var(--primary-color);">Video
                             Editor</span> and <span style="color: var(--primary-color);">front-end developer</span></h2>
                     <p style="color: var(--secondary-color);">He crafts responsive websites where technologies meet
@@ -101,7 +103,7 @@
                 </section>
             </div>
         </section>
-        <div class="text-light text-center d-flex justify-content-center position-relative w-100">
+        <div class="text-light text-center d-flex justify-content-center position-relative w-100 top-100 mt-sm-5">
             <div class="d-flex flex-column position-relative align-items-center">
                 <div class="px-sm-4 pt-sm-3 px-0 border text-center" style="border-color: var(--secondary-color);">
                     <img src="./Images/Frame 49.png" alt="" class="position-absolute"
@@ -121,7 +123,7 @@
         </div>
     </header>
     <main class="mt-5 p-3">
-        <section class="container-lg about-sec ps-sm-5 w-100">
+        <section id="about-me" class="container-lg about-sec ps-sm-5 w-100 mt-5">
             <div class="row align-items-center gy-4 d-flex flex-wrap-reverse offset-1 offset-lg-1">
                 <div class="col-12 col-md-10 col-lg-6 text-light animate-on-scroll-to-right">
                     <div class="d-flex align-items-center mb-3 ">
@@ -149,7 +151,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-lg skills-sec mt-5">
+        <section id="skills" class="container-lg skills-sec mt-5">
             <div class="offset-xl-1 offset-lg-0 ps-5 d-flex align-items-center mb-3 animate-on-scroll-to-right">
                 <h3 class="m-0 text-light"><span style="color: var(--primary-color);">#</span>skills</h3>
                 <div class="ms-3 flex-grow-1" style="height: 3px; background: var(--primary-color);"></div>
@@ -181,7 +183,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-lg projects-sec mt-5">
+        <section id="projects" class="container-lg projects-sec mt-5">
             <div class="offset-xl-1 offset-lg-0 ps-5 d-flex align-items-center mb-3 animate-on-scroll-to-right">
                 <h3 class="m-0 text-light"><span style="color: var(--primary-color);">#</span>projects</h3>
                 <div class="ms-3 flex-grow-1" style="height: 3px; background: var(--primary-color);"></div>
@@ -194,7 +196,7 @@
                         <p class="card-text">portfolio template from figma as a graduation project</p>
                         <button type="button" class="btn header-contact-btn"
                             style="outline: var(--secondary-color) 1px solid;">
-                            <a href="#contact" class="text-light" style="text-decoration: none;">See it's photos</a>
+                            <a href="./pages/portfolio.html" class="text-light" style="text-decoration: none;">See it's photos</a>
                         </button>
                     </div>
                 </div>
@@ -205,7 +207,7 @@
                         <p class="card-text">landing page similar to Jumia as a project for college</p>
                         <button type="button" class="btn header-contact-btn"
                             style="outline: var(--secondary-color) 1px solid;">
-                            <a href="#" class="text-light prog-pics" style="text-decoration: none;">See it's photos</a>
+                            <a href="./pages/jumia-page.html" class="text-light prog-pics" style="text-decoration: none;">See it's photos</a>
                         </button>
                     </div>
                 </div>
@@ -309,15 +311,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <div class="col-md-6 d-flex flex-column">
-    <div class="d-flex align-items-center">
-        <div class="d-flex text-light align-items-">
-            <img src="./Images/logo.png" alt="" width="20" height="20">
-            <p>Ahmed</p>
-        </div>
-        <p style="color: var(--secondary-color);">example@example.com</p>
-    </div>
-</div> -->
