@@ -1,0 +1,210 @@
+:root {
+    --background-color: #282C33;
+    --primary-color: #C778DD;
+    --secondary-color: #ABB2BF;
+}
+body {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--background-color);
+}
+
+
+.nav-link:not(.active) {
+    color: var(--secondary-color);
+}
+.active {
+    color: white;
+}
+.nav-link:hover,
+.footer-mail:hover a,
+.footer-mail:hover i {
+    color: white !important;
+    transition: 0.3s !important;
+}
+.nav-item select {
+    cursor: pointer;
+}
+.rope {
+    content: '';
+    background-color: var(--secondary-color);
+    width: 1px;
+    height: 191px !important;
+}
+.rope + div {
+    left: -12px;
+    top: 200px;
+    font-size: 20px;
+}
+
+.header-contact-btn:hover {
+    background-color: var(--secondary-color);
+    outline: none !important;
+}
+.container {
+    max-width: 80% !important;
+}
+.cookin {
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: white;
+    align-items: center;
+    left: 9%;
+}
+
+.line {
+    content: '';
+    background-color: var(--primary-color);
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    height: 1px;
+}
+
+
+.theLink::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -50px;
+    left: 80px;
+    background-color: #ABB2BF;
+    color: white;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    pointer-events: none;
+    transition: 0.2s;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.theLink:hover::after {
+    opacity: 1;
+    bottom: 0%;
+}
+.theLink-contact:hover, 
+.theLink-contact:hover i {
+    color: white !important;
+    transition: 0.3s !important;
+}
+.theLink-contact::after {
+    bottom: -50px;
+    left: -50px;
+    transform: translateX(-50%);
+}
+
+.theLink-contact:hover::after {
+    opacity: 1;
+    bottom: 0%;
+}
+.theLink-footer::after {
+    bottom: -70px;
+    left: -20px;
+    transform: translateY(-100%);
+}
+
+.theLink-footer:hover::after {
+    opacity: 1;
+    bottom: 0%;
+}
+
+
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.animate-on-scroll-to-right {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.6s ease-out;
+}
+.animate-on-scroll-to-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+@media (max-width: 1441px) {
+    .quote-name {
+        bottom: 19% !important;
+    }
+}
+@media (max-width: 1024px) {
+    .quote-name {
+        bottom: 12% !important;
+    }
+}
+@media (max-width: 840px) {
+    .my-pic-header {
+        width: 250px !important;
+    }
+}
+@media (max-width: 768px) {
+    .quote-name {
+        bottom: -0.56rem !important;
+    }
+    .dots-image {
+        /* right: -10% !important;
+        bottom: 55% !important; */
+        display: none;
+    }
+    .square-right {
+        display: none;
+    }
+    .behind-my-pic-header {
+        top: 0% !important;
+        left: 10% !important;
+    }
+    .behind-my-pic-header-img {
+        top: 100px !important;
+        width: 120px !important;
+    }
+}
+@media (max-width: 576px) {
+    .dots-image {
+        right: -60% !important;
+        bottom: 60% !important;
+    }
+    .behind-my-pic-header {
+        top: 10% !important;
+        left: 0% !important;
+    }
+    .header-section {
+        height: 100vh !important;
+        padding-bottom: 50px !important;
+    }
+}
+@media (max-width: 426px) {
+    .about-img {
+        max-width: 200px !important;
+    }
+    .quote-name {
+        bottom: -3.55rem !important;
+    }
+    .skills-sec .card {
+        width: 100% !important;
+    }
+    .my-pic-header-div {
+        left: -30px !important;
+    }
+    .behind-my-pic-header {
+        top: 40px !important;
+        left: 0 !important;
+    }
+}
